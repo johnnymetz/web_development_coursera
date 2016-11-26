@@ -16,23 +16,25 @@ body {
 .row {
 	width: 100%;
 }
-/*Style div (columns)*/
+/*Style columns*/
 .column {
+	padding: 10px;
+}
+section {
 	border: 1px solid #000000;  /*black*/
 	height: 350px;
 	width: 100%;
+	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	overflow: auto;
 }
-/*Style box + title + content*/
+/*Style box + content*/
 .box, .content{
 	padding: 0px;
 	margin: 0px;
 }
 .box {
-	position: relative;
 	float: right;
 	padding: 10px;
 	border: 1px solid #000000;  /*black*/
@@ -40,6 +42,7 @@ body {
 	text-align: center;
 	font-weight: bold;
 	font-size: 125%;
+	position: relative;
 }
 #raiders_box {
 	background-color: #000000;  /*black*/
@@ -53,6 +56,11 @@ body {
 	background-color: #006400;  /*darkgreen*/
 	color: #FFFF00;  /*yellow*/
 }
+.content {
+	margin: 60px 10px 10px 10px;
+	text-align: justify;
+	line-height: 23px;
+}
 #sec1 {
 	background-color: #D3D3D3;  /*lightgrey*/
 }
@@ -61,11 +69,6 @@ body {
 }
 #sec3 {
 	background-color: #FFD700;  /*gold*/
-}
-.content {
-	margin: 60px 10px 10px 10px;
-	text-align: justify;
-	line-height: 23px;
 }
 
 /*Desktop styling*/
@@ -81,7 +84,7 @@ body {
 		float: left;
 		width: 50%;
 	}
-	#sec3 {
+	#col3 {
 		width: 100%;
 	}
 }
