@@ -24,10 +24,10 @@ section {
 	border: 1px solid #000000;  /*black*/
 	height: 350px;
 	width: 100%;
-	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	overflow: auto;
 }
 /*Style box + content*/
 .box, .content{
@@ -36,9 +36,9 @@ section {
 }
 .box {
 	float: right;
-	padding: 10px;
 	border: 1px solid #000000;  /*black*/
 	width: 50%;
+	padding: 10px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 125%;
