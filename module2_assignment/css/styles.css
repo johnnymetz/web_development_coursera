@@ -1,0 +1,95 @@
+/*Base styles*/
+* {
+	box-sizing: border-box;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+/*Style header*/
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+/*Style body*/
+body {
+	background: url(module2_background_pic.jpg) repeat;
+}
+/*Style container*/
+.row {
+	width: 100%;
+}
+/*Style div (columns)*/
+.column {
+	border: 1px solid #000000;  /*black*/
+	height: 350px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: auto;
+}
+/*Style box + title + content*/
+.box, .content{
+	padding: 0px;
+	margin: 0px;
+}
+.box {
+	position: relative;
+	float: right;
+	padding: 10px;
+	border: 1px solid #000000;  /*black*/
+	width: 50%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 125%;
+}
+#raiders_box {
+	background-color: #000000;  /*black*/
+	color: #DCDCDC;  /*gainsboro*/
+}
+#warriors_box {
+	background-color: #000080;  /*navy*/
+	color: #FFD700;  /*gold*/
+}
+#athletics_box {
+	background-color: #006400;  /*darkgreen*/
+	color: #FFFF00;  /*yellow*/
+}
+#sec1 {
+	background-color: #D3D3D3;  /*lightgrey*/
+}
+#sec2 {
+	background-color: #1E90FF;  /*dodgerblue*/
+}
+#sec3 {
+	background-color: #FFD700;  /*gold*/
+}
+.content {
+	margin: 60px 10px 10px 10px;
+	text-align: justify;
+	line-height: 23px;
+}
+
+/*Desktop styling*/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+/*Tablet styling*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		float: left;
+		width: 50%;
+	}
+	#sec3 {
+		width: 100%;
+	}
+}
+
+/*Mobile styling*/
+@media (max-width: 767) {
+	.col-sm-12 {
+		float: left;
+		width: 100%;
+	}
+}
